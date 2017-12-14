@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>FoodMap</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<!--img-loading-->
+	<div id="foodmap">
+		<h1 class="title-splash">FOODMAP</h1>
+    <img class="center-block loading" src="assets/img/loading1.gif" alt="">
+	</div>
+
+<!--page-home-->
+	<section class="food">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-xs-12 page-header">
+				<h1 class="title-food">FOODMAP</h1>	
+				</div>	
+			</div>
+
+			<!--Div mapa-->
+			<div class="row map">
+				<div class="col-sm-12 col-xs-12">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d51899.07047084026!2d-70.68273434791931!3d-33.43223588279139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurantes+santiago!5e0!3m2!1ses-419!2scl!4v1513113963034"frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>		
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-xs-12">
+					<h3>Puedes escojer entre muchas variedades!!!</h3>
+          <p>Peruana-Mexicana-Chilena-Italiana-Chatarra</p>
+				</div>
+			</div>	
+			<!--div d-->
+			<div class="row">
+				<div class="col-sm-12 col-xs-12">
+					<div class="input-group">
+				      <input class="form-control filter" id="myInput" type="text" placeholder="Filtrar Restaurantes..">
+				      <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+					</div>		
+				</div>	
+			</div>	
+      <!--div fotos-->
+      <div class="img-restaurant" id="myList">
+  			<div class="row first-img">
+  				<div class="col-sm-4 col-xs-4 img-one">
+  				  <img src="assets/img/chatarra.jpg" alt="" class="img-responsive zoom" data-toggle="modal" data-target="#modal-info" data-name="Hamburguesas Maravillosas" data-message="Las hamburguesas más ricas" data-address="Recoleta #1234" data-cost="Precios entre $1300 y $6000">
+            <p class="hidden-xs hidden-sm hidden-lg hidden-md">chatarra hamburgesas papas fritas nuggets</p>
+  				</div>	
+  				<div class="col-sm-4 col-xs-4 img-one">
+  				  <img  src="assets/img/peruana.jpg" alt="" class="img-responsive zoom">
+            <p class="hidden-xs hidden-sm hidden-lg hidden-md">peruana</p>
+  				</div>
+  				<div class="col-sm-4 col-xs-4 img-one">
+  				  <img src="assets/img/tacos.jpg" alt="" class="img-responsive zoom">
+            <p class="hidden-xs hidden-sm hidden-lg hidden-md">mexicana</p>
+  				</div>
+  			</div>
+  			<div class="row first-img">
+  				<div class="col-sm-4 col-xs-4 img-one">
+        		<img src="assets/img/porotos.jpg" alt="..."  class="img-responsive zoom">
+            <p class="hidden-xs hidden-sm hidden-lg hidden-md">chilena</p>
+      		</div>
+  				<div class="col-sm-4 col-xs-4 img-one">
+     				<img src="assets/img/humitas.jpg" alt="..."  class="img-responsive zoom">
+            <p class="hidden-xs hidden-sm hidden-lg hidden-md">chilena</p>
+      		</div>
+          <div class="col-sm-4 col-xs-4 img-one">
+            <img src="assets/img/cevicheperuano.jpg" alt="..."  class="img-responsive zoom">
+            <p class="hidden-xs hidden-sm hidden-lg hidden-md">peruana</p>
+          </div>
+      	</div>
+        <div class="row first-img">
+          <div class="col-sm-4 col-xs-4 img-one">
+            <img src="assets/img/fajitas.jpg" alt="..."  class="img-responsive zoom">
+            <p class="hidden-xs hidden-sm hidden-lg hidden-md">mexicana</p>
+          </div>
+          <div class="col-sm-4 col-xs-4 img-one">
+            <img src="assets/img/hamburgesa.jpg" alt="..."  class="img-responsive zoom">
+            <p class="hidden-xs hidden-sm hidden-lg hidden-md">chatarra</p>
+          </div>
+          <div class="col-sm-4 col-xs-4 img-one">
+            <img src="assets/img/quesadillas.jpg" alt="..." class="img-responsive zoom" 
+            <p class="hidden-xs hidden-sm hidden-lg hidden-md">mexicana</p>
+          </div>
+        </div>
+         <div id="modal-info" class="modal fade" role="dialog">
+          <div class="modal-dialog">        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <iframe class="smallMap" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyA3CyFrzU5NCxDrTbRfIRaYQDGGKTqlhcs&q=comida+china+santiago">
+                      </iframe>
+                      <p class="message"></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 address"></div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 cost"></div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default order" data-dismiss="modal">Pedir ahora</button>
+              </div>
+            </div>        
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>	
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/7e3056ac5b.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>

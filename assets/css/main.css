@@ -1,0 +1,58 @@
+body{
+	margin:0;
+	padding:0;
+}
+.food{
+	background-color: #2B2B2B;
+	color: orange;
+	text-align: center;
+}
+.title-splash{
+  padding-top: 45%;
+  color: orange;
+  text-align: center;
+}
+.loading{
+  margin-top: 5%;
+  width: 30%;
+}
+.title-food, h3{
+	color: orange;
+	text-align: center;
+}
+.input-filter{
+	margin-bottom: 10%;
+}
+.img-one{
+padding: 0 1%;
+}
+#foodmap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #2B2B2B;
+}
+.first-img{
+	margin-top: 5%;
+	margin-bottom: 3%;
+}
+.zoom {
+    width: 300px;
+    height: 120px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;   
+}
+ 
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+img.zoom:hover{
+  opacity: 0.5;
+}
